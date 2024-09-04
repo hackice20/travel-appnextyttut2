@@ -9,9 +9,6 @@ Hilink is a Next.js frontend project styled with Tailwind CSS. It aims to provid
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
