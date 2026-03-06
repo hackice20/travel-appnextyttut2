@@ -1,0 +1,28 @@
+name: Dependabot Reviewer Check
+on:
+  pull_request:
+    types: [opened, ready_for_review]
+
+jobs:
+  check-and-assign:
+    runs-on: ubuntu-latest
+    # This is the "Magic Filter": It only runs if Dependabot opened the PR
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - name: Add Reviewers
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.pulls.requestReviewers({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number,
+              reviewers: [
+                'kelp-karan', 
+                'kelp-vikesh', 
+                'mahendrakelp', 
+                'kelp-yashraj', 
+                'keyur-kelp'
+              ]
+            })
