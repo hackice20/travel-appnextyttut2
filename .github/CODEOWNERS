@@ -3,5 +3,5 @@
 # Since humans usually change many files, but Dependabot 
 # often only changes these, it acts as a filter.
 
-package.json @kelp-karan @kelp-vikesh @mahendrakelp @kelp-yashraj @keyur-kelp
-package-lock.json @hackice20 @sohamjoshi25
+package.json @hackice20
+package-lock.json @hackice20
