@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily" # Set to daily for testing so you see results faster
+    commit-message:
+      prefix: "chore"
+    labels:
+      - "dependabot"
+    # We define groups so you get fewer, cleaner PRs
+    groups:
+      dependencies:
+        patterns:
+          - "*"
